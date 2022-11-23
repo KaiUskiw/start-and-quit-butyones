@@ -25,6 +25,8 @@ void draw()
 {
   if ( noNowreallystart==true ) {
     background(110); //Night Mode not considered yet
+    if () {} else {} //End Quit Button Colour
+    fill(quitButtonColour);
    rect( quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight ); //Quit Button with Hoverover
   } 
 } //End draw
