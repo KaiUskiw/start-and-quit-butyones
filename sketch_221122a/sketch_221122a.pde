@@ -1,7 +1,25 @@
 //Global variables
+int appWidth, appHeight;
 Boolean start=false, noNowreallystart=false ;
+float quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight;
 //
-void setup() {} //End setup
+void setup() 
+{
+  //Display & Orientation Algorithms not considered yet
+  size(400,300); //Landscape
+  //fullscreen(); //displayWidth, displayHeight
+  appWidth = width;
+  appHeight = height;
+  //
+  //Population
+  float centerX = appWidth * 1/2;
+  float centerY = appHeight * 1/2;
+  quitButtonX = centerX - ( appWidth *1/4 );
+  quitButtonY = centerY - ( appHeight *1/4 );
+  quitButtonWidth = ;
+  quitButtonHeight = ;
+
+} //End setup
 //
 void draw() 
 {
