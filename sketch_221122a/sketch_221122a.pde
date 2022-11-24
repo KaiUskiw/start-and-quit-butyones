@@ -36,6 +36,7 @@ void draw()
     } //End Quit Button Colour 
     //
     fill(quitButtonColour);
+    */
    rect( quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight ); //Quit Button with Hoverover
   } 
 } //End draw
@@ -57,6 +58,7 @@ void mousePressed()
   start = true;
   println("To Start, Press the Space Bar, if you can't do that, cry about it.");
   //
+  if ( mouseX> && mouseX< && mouseY> && mouseY< ) exit();
 } //End mousePressed
 //
 //End Main Program
