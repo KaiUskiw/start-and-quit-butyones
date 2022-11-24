@@ -58,7 +58,7 @@ void mousePressed()
   start = true;
   println("To Start, Press the Space Bar, if you can't do that, cry about it.");
   //
-  if ( mouseX> && mouseX< && mouseY> && mouseY< ) exit();
+  if ( mouseX>quitButtonX && mouseX<quitButtonX+quitButtonWidth && mouseY>quitButtonY && mouseY<quitButtonY+quitButtonHeight ) exit();
 } //End mousePressed
 //
 //End Main Program
