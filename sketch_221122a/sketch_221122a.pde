@@ -2,6 +2,7 @@
 int appWidth, appHeight;
 Boolean start=false, noNowreallystart=false ;
 float quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight;
+color quitButtonColour, green=#05FF07 , red=#FF000D ;
 //
 void setup() 
 {
@@ -28,11 +29,12 @@ void draw()
     //Hover Over Feature
     println("X-value", quitButtonX, mouseX ,quitButtonX+quitButtonWidth);
     println("Y-value", quitButtonY, mouseY ,quitButtonY+quitButtonHeight);
-    /*
+    //
+    //Quit Button Hover Over Feature
     if () {
-      quitButtonColour = green;
+      quitButtonColour = green; //Remember Night Mode
     } else {
-      quitButtonColour = red;
+      quitButtonColour = red; //Remember Day Mode
     } //End Quit Button Colour 
     //
     fill(quitButtonColour);
@@ -58,6 +60,7 @@ void mousePressed()
   start = true;
   println("To Start, Press the Space Bar, if you can't do that, cry about it.");
   //
+  //Quit Button: Logical Rectangle, see println
   if ( mouseX>quitButtonX && mouseX<quitButtonX+quitButtonWidth && mouseY>quitButtonY && mouseY<quitButtonY+quitButtonHeight ) exit();
 } //End mousePressed
 //
