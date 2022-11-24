@@ -40,9 +40,11 @@ void mousePressed()
   //OS Level Start Button
   start = true;
   println("To Start, Press the Space Bar, if you can't do that, cry about it.");
+  //Hint Bug if continue pressing mouse
   //
   //Quit Button: Logical Rectangle, see println
   if ( mouseX>quitButtonX && mouseX<quitButtonX+quitButtonWidth && mouseY>quitButtonY && mouseY<quitButtonY+quitButtonHeight ) exit();
+  //
 } //End mousePressed
 //
 //End Main Program
