@@ -2,7 +2,7 @@
 int appWidth, appHeight;
 Boolean start=false, noNowreallystart=false ;
 float quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight;
-color quitButtonColour, green=#05FF07 , red=#FF000D ;
+color quitButtonColour, white=#FFFFFF , red=#FF000D ;
 //
 void setup() 
 {
@@ -31,14 +31,14 @@ void draw()
     println("Y-value", quitButtonY, mouseY ,quitButtonY+quitButtonHeight);
     //
     //Quit Button Hover Over Feature
-    if () {
-      quitButtonColour = green; //Remember Night Mode
+    if ( mouseX>quitButtonX && mouseX<quitButtonX+quitButtonWidth && mouseY>quitButtonY && mouseY<quitButtonY+quitButtonHeight ) {
+       quitButtonColour = red; //Remember Day Mode
+       //Logical Rectangle Boolean True only when hover over active
     } else {
-      quitButtonColour = red; //Remember Day Mode
+      quitButtonColour = white; //Remember Night Mode
     } //End Quit Button Colour 
     //
     fill(quitButtonColour);
-    */
    rect( quitButtonX, quitButtonY, quitButtonWidth, quitButtonHeight ); //Quit Button with Hoverover
   } 
 } //End draw
