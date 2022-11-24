@@ -1,1 +1,3 @@
-void displayOrientation() {}//End displayOrientation
+void displayOrientation() {
+  //Display & Orientation Algorithms not considered yet
+}//End displayOrientation
