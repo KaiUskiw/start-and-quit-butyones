@@ -1,10 +1,7 @@
 void program() {
    background(110); //Night Mode not considered yet
     //
-    //Hover Over Feature
-    println("X-value", quitButtonX, mouseX ,quitButtonX+quitButtonWidth);
-    println("Y-value", quitButtonY, mouseY ,quitButtonY+quitButtonHeight);
-    //
+    debuggingLogicalRectangle();
     //Quit Button Hover Over Feature
     if ( mouseX>quitButtonX && mouseX<quitButtonX+quitButtonWidth && mouseY>quitButtonY && mouseY<quitButtonY+quitButtonHeight ) {
        quitButtonColour = red; //Remember Day Mode
